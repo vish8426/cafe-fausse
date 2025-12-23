@@ -3,6 +3,7 @@ import Lightbox from '../components/Lightbox';
 import '../styles/Gallery.css';
 
 // Import all your images at the top - extra images from: (Google Gemini, Generate Images Prompts 2025)
+// (Google Gemini - Quantic Project Image Generation, 2025)
 import interiorImage from '../assets/imgs/gallery-cafe-interior.webp';
 import ribeyeImage from '../assets/imgs/gallery-ribeye-steak.webp';
 import homeCafe from '../assets/imgs/home-cafe-fausse.webp';

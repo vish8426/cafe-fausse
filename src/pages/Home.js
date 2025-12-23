@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 
+// Text has been adapted from the Quantic Project Prompt and with assistance from Claud AI.
+// (Claude AI - Prompts for Project Draft Website Structure (Program Setup), 2025) 
+
 function Home() {
   return (
     <div className="home">
