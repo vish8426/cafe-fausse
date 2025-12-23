@@ -7,12 +7,12 @@ import random
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
 
-# Initialize database on startup
+# Initialise database on startup
 init_db()
 
 @app.route('/api/newsletter', methods=['POST'])
 def newsletter_signup():
-    """Handle newsletter signup"""
+    # Handle newsletter signup
     try:
         data = request.get_json()
         email = data.get('email')
@@ -55,7 +55,7 @@ def newsletter_signup():
 
 @app.route('/api/reservations', methods=['POST'])
 def create_reservation_endpoint():
-    """Handle table reservations"""
+    # Handle table reservations
     try:
         data = request.get_json()
         
@@ -103,7 +103,7 @@ def create_reservation_endpoint():
 
 @app.route('/api/reservations/<int:reservation_id>', methods=['GET'])
 def get_reservation(reservation_id):
-    """Get reservation details"""
+    # Get reservation details
     try:
         conn = get_db_connection()
         cursor = conn.cursor()
@@ -140,7 +140,7 @@ def get_reservation(reservation_id):
 
 @app.route('/health', methods=['GET'])
 def health_check():
-    """Health check endpoint"""
+    # Health check endpoint
     return jsonify({'status': 'healthy'}), 200
 
 if __name__ == '__main__':

@@ -11,7 +11,7 @@ DB_CONFIG = {
 }
 
 def get_db_connection():
-    """Create and return a database connection"""
+    # Create and return a database connection
     try:
         conn = psycopg2.connect(**DB_CONFIG)
         return conn
@@ -20,8 +20,8 @@ def get_db_connection():
         raise
 
 def init_db():
-    """Initialize the database with required tables"""
-    # First, connect to PostgreSQL server (not specific database)
+    # Initialise the database with required tables
+    # First connect to PostgreSQL server
     try:
         conn = psycopg2.connect(
             host=DB_CONFIG['host'],
@@ -97,7 +97,7 @@ def init_db():
         raise
 
 def drop_tables():
-    """Drop all tables (useful for testing)"""
+    # Drop all tables 
     try:
         conn = get_db_connection()
         cursor = conn.cursor()
@@ -116,5 +116,5 @@ def drop_tables():
         raise
 
 if __name__ == '__main__':
-    # Initialize database when run directly
+    # Initialise database when run directly
     init_db()

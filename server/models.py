@@ -95,7 +95,7 @@ def create_reservation(cursor, customer_id, time_slot, table_number, guests=2):
         )
         return cursor.fetchone()[0]
     except Exception as e:
-        # Handle duplicate reservation (same table and time slot)
+        # Handle duplicate reservation - same table and time slot
         raise Exception(f"Failed to create reservation: {str(e)}")
 
 def get_reservation_by_id(cursor, reservation_id):
@@ -170,7 +170,9 @@ def cancel_reservation(cursor, reservation_id):
         reservation_id: ID of the reservation to cancel
     
     Returns:
-        bool: True if cancelled successfully, False otherwise
+        bool: 
+            - True if cancelled successfully 
+            - False otherwise
     """
     cursor.execute(
         "DELETE FROM reservations WHERE reservation_id = %s RETURNING reservation_id",
