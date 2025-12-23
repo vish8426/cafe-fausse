@@ -1,6 +1,9 @@
 import React from 'react';
 import '../styles/About.css';
 
+// Text has been adapted from the Quantic Project Prompt and with assistance from Claud AI.
+// (Claude AI - Prompts for Project Draft Website Structure (Program Setup), 2025) 
+
 function About() {
   return (
     <div className="about-page">
