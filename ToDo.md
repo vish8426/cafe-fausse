@@ -11,9 +11,9 @@
 - ✅ Add section to describe the use of AI within the project.
 - ✅ Add description of the requirements met.
 - ✅ Complete and review the README.md file for submission. 
-- Add references from AI tooling used in relevant code sections and Word document. 
-- Perform a final code review. 
-- Record video demonstration of the website and backend.
-- Configure and push codebase to submission repository.
+- ✅ Add references from AI tooling used in relevant code sections and Word document. 
+- ✅ Perform a final code review. 
+- ✅ Record video demonstration of the website and backend.
+- ✅ Configure and push codebase to submission repository.
 - ✅ Fix the alignment of the About Page section on the distinct qualities of the restaurant. 
 - ✅ Archive the README.md for the React default setup.
